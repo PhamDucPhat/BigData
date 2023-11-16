@@ -15,5 +15,5 @@ for word in tokenize_words:
     if word not in stop_words:
         tokenize_words_without_stop_words.append(word)
 
-print("Cac tu dung duoc xoa:\n",set(tokenize_words)-set(tokenize_words_without_stop_words))
-print("Khong phai tu dung:\n",tokenize_words_without_stop_words)
+print("Removed words:\n",set(tokenize_words)-set(tokenize_words_without_stop_words))
+print("Remaining words:\n",tokenize_words_without_stop_words)
